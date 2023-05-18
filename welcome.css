@@ -1,0 +1,234 @@
+body {
+    background: rgba(0, 0, 0, 0.5) url('https://i.etsystatic.com/16685774/r/il/9e608a/2457519200/il_fullxfull.2457519200_9ehf.jpg');
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+    color: aqua;
+
+
+}
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,900,400italic,700italic,900italic);
+
+*,
+:before,
+:after {
+    box-sizing: border-box;
+}
+
+
+
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80em;
+
+
+    text-align: center;
+
+
+    overflow: hidden;
+    background-color: red;
+    background-blend-mode: darken;
+
+    top: 0;
+    width: 100%;
+
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    
+    width: 100%;
+    position: fixed;
+    background-color: rgba(2, 2, 2, 0.9);
+    border-radius: 10%;
+    background-blend-mode: darken;
+}
+
+h1 {
+    animation: text-shadow 1.5s ease-in-out infinite;
+    font-size: 2em;
+    font-weight: 1000;
+
+
+}
+
+
+
+a {
+    color: #024794;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+@keyframes text-shadow {
+    0% {
+        transform: translateY(0);
+        text-shadow:
+            0 0 0 #0c2ffb,
+            0 0 0 #2cfcfd,
+            0 0 0 #fb203b,
+            0 0 0 #fefc4b;
+    }
+
+    20% {
+        transform: translateY(-1em);
+        text-shadow:
+            0 0.125em 0 #0c2ffb,
+            0 0.25em 0 #2cfcfd,
+            0 -0.125em 0 #fb203b,
+            0 -0.25em 0 #fefc4b;
+    }
+
+    40% {
+        transform: translateY(0.5em);
+        text-shadow:
+            0 -0.0625em 0 #0c2ffb,
+            0 -0.125em 0 #2cfcfd,
+            0 0.0625em 0 #fb203b,
+            0 0.125em 0 #fefc4b;
+    }
+
+    60% {
+        transform: translateY(-0.25em);
+        text-shadow:
+            0 0.03125em 0 #0c2ffb,
+            0 0.0625em 0 #2cfcfd,
+            0 -0.03125em 0 #fb203b,
+            0 -0.0625em 0 #fefc4b;
+    }
+
+    80% {
+        transform: translateY(0);
+        text-shadow:
+            0 0 0 #0ea80e,
+            0 0 0 #501bb3,
+            0 0 0 #1dadd1,
+            0 0 0 #e21c1c;
+    }
+
+    80% {
+        transform: translateY(0);
+        text-shadow:
+            0 -0.0625em 0 #0c2ffb,
+            0 -0.125em 0 #2cfcfd,
+            0 0.0625em 0 #fb203b,
+            0 0.125em 0 #fefc4b;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+
+/* coding */
+.border {
+    border-bottom: 4px double red;
+}
+
+.main {
+    padding: 16px;
+    margin-top: 150px;
+    height: 1500px;
+    /* Used in this example to enable scrolling */
+}
+
+@media only screen and (max-width: 400px) {
+    .main {
+        padding: 16px;
+        margin-top: 200px;
+        height: 1500px;
+        /* Used in this example to enable scrolling */
+    }
+}
+
+
+/* flex box */
+
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .flex-item-left {
+    /* background-color: rgb(255, 255, 255,0.5); */
+    padding-right: 50px;
+    flex: 50%;
+
+  }
+
+  .flex-item-left > .gift1 {
+border: 4px double red;
+background-color:rgba(0, 0, 0, 0.8);
+padding :30px 30px 0px 30px;
+
+  }
+
+  
+  .flex-item-right {
+    /* background-color:rgb(255, 192, 203,0.5); */
+    padding-left: 50px;
+    flex: 50%;
+  }
+
+
+
+  .flex-item-right > .gift2 {
+    border: 4px double rgb(220, 235, 14);
+    padding :30px 30px 0px 30px;
+    background-color:rgba(167, 53, 182, 0.8);
+  }
+  
+  /* Responsive layout - makes a one column-layout instead of two-column layout */
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+      
+    }
+  }
+
+  .content{
+    font-family: "Sofia", sans-serif;
+  }
+  
+  @font-face {
+    font-family: myFirstFont;
+    src: url(ChrustyRock-ORLA.ttf);
+ }
+  
+ span {
+    font-family: myFirstFont;
+    color: yellow;
+ }
+.Memorable{
+    color: white;
+    
+
+}
+img{
+    left:50%;
+}
+.footer{
+background-color: rgb(238, 184, 193,0.7);
+padding:1%;
+font-size: 30px;
+text-align: center;
+
+}
